@@ -1,8 +1,8 @@
 //
 //  Succeed.swift
-//  Lycee_Pierre_Termier
+//  
 //
-//  Created by Robin PETIT on 08/12/2022.
+//  Created by Rodevpet on 08/12/2022.
 //
 
 import SwiftUI
