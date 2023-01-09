@@ -18,7 +18,7 @@ ED ENT is an IOS app to connect [Ecole Directe](https://www.ecoledirecte.com) an
   - New class content available
 
 - Automation task :
-  - add homerork to reminder
+  - add homework to reminder
   - update personnal calender (Icloud, Google, Webdav) from planning
   - (Maybe) IA can handle a received message (For example : if a new message from a teacher is received like "I will be away tomorrow", the IA read the message and delete this event from Icloud calendar.)
   - calculation of the average
