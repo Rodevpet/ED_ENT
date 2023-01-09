@@ -1,7 +1,7 @@
 # ED ENT
 ED ENT is an IOS app to connect [Ecole Directe](https://www.ecoledirecte.com) and see everything like official application.
 
-![Model](https://github.com/Rodevpet/ED_ENT/blob/894b361475d04a5c1483de8b3ffd6373b2c9089f/Modele%20ENT-ED.png){ width=50% }
+![Model](https://github.com/Rodevpet/ED_ENT/blob/894b361475d04a5c1483de8b3ffd6373b2c9089f/Modele%20ENT-ED.png){ width=50px }
 
 ## Basic Feature
 - See grade
