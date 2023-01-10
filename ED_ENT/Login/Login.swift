@@ -28,20 +28,20 @@ class Login : ObservableObject{
         }
     }
     func Login (ID : String,PSWD : String)throws{
+        //Request to www.ecoledirect.com
         let parameters = "data={\"uuid\":\"\",\"identifiant\": \""+ID+"\",\"motdepasse\":\""+PSWD+"\", \"isReLogin\": false}"
         print ("paramets is "+parameters)
         let postData =  parameters.data(using: .utf8)
         var request = URLRequest(url: URL(string: "https://api.ecoledirecte.com/v3/login.awp?v=4.24.0")!,timeoutInterval: Double.infinity)
-        
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        
         request.httpMethod = "POST"
         request.httpBody = postData
+        
+        //Get response
         let task = URLSession.shared.dataTask(with: request){data, response, error in
             if let data = data{
                 let login:Login_Info = try! JSONDecoder().decode(Login_Info.self, from: data)
                 DispatchQueue.main.async {
-                    // update our UI
                     do{
                         if (login.code == 200){
                             if (try self.log.ItemKeychainExist()==false){

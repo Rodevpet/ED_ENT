@@ -20,7 +20,7 @@ struct ED_ENTApp: App {
                 Login_View(request:code)
             }
             if (self.code.state == 200){
-                Succeed()
+                Home_View()
             }
         }
     }

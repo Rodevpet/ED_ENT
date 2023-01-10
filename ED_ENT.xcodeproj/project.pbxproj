@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0017F187296C19CC0024EFC7 /* Home_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017F186296C19CC0024EFC7 /* Home_View.swift */; };
 		003CA94229427BB40003C89F /* Succeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CA94129427BB40003C89F /* Succeed.swift */; };
 		003EBB40292182600043B033 /* ED_ENTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EBB3F292182600043B033 /* ED_ENTApp.swift */; };
 		003EBB42292182600043B033 /* Login_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EBB41292182600043B033 /* Login_View.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0017F186296C19CC0024EFC7 /* Home_View.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = Home_View.swift; sourceTree = "<group>"; tabWidth = 5; wrapsLines = 1; };
 		003CA94129427BB40003C89F /* Succeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Succeed.swift; sourceTree = "<group>"; };
 		003EBB3C292182600043B033 /* ED_ENT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ED_ENT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003EBB3F292182600043B033 /* ED_ENTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ED_ENTApp.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0017F185296C19B50024EFC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0017F186296C19CC0024EFC7 /* Home_View.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		003EBB33292182600043B033 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		003EBB3E292182600043B033 /* ED_ENT */ = {
 			isa = PBXGroup;
 			children = (
+				0017F185296C19B50024EFC7 /* Home */,
 				004BB74C2947942F00D437FD /* Login */,
 				003EBB3F292182600043B033 /* ED_ENTApp.swift */,
 				003EBB43292182610043B033 /* Assets.xcassets */,
@@ -204,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */,
+				0017F187296C19CC0024EFC7 /* Home_View.swift in Sources */,
 				003CA94229427BB40003C89F /* Succeed.swift in Sources */,
 				003EBB42292182600043B033 /* Login_View.swift in Sources */,
 				004868D22922B68F0078C97A /* Login.swift in Sources */,
