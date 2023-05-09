@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0017F187296C19CC0024EFC7 /* Home_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017F186296C19CC0024EFC7 /* Home_View.swift */; };
-		003CA94229427BB40003C89F /* Succeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CA94129427BB40003C89F /* Succeed.swift */; };
+		0017F187296C19CC0024EFC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017F186296C19CC0024EFC7 /* HomeView.swift */; };
+		002FB98E2A091F3300B91112 /* GameOfSquids.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 002FB98D2A091F3300B91112 /* GameOfSquids.ttf */; };
+		002FB9932A093A6300B91112 /* NotesDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FB9922A093A6300B91112 /* NotesDataStruct.swift */; };
+		002FB9982A094AA900B91112 /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FB9972A094AA900B91112 /* NotesController.swift */; };
 		003EBB40292182600043B033 /* ED_ENTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EBB3F292182600043B033 /* ED_ENTApp.swift */; };
-		003EBB42292182600043B033 /* Login_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EBB41292182600043B033 /* Login_View.swift */; };
+		003EBB42292182600043B033 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EBB41292182600043B033 /* LoginView.swift */; };
 		003EBB44292182610043B033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003EBB43292182610043B033 /* Assets.xcassets */; };
 		003EBB47292182610043B033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003EBB46292182610043B033 /* Preview Assets.xcassets */; };
-		004868D22922B68F0078C97A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004868D12922B68F0078C97A /* Login.swift */; };
+		004794EE29CB7BEC006D0BC5 /* LoginDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004794ED29CB7BEC006D0BC5 /* LoginDataStruct.swift */; };
+		004868D22922B68F0078C97A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004868D12922B68F0078C97A /* LoginController.swift */; };
+		00B34CBA2A01326C001E38CF /* NotesVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CB92A01326C001E38CF /* NotesVIew.swift */; };
+		00B34CBC2A01378A001E38CF /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CBB2A01378A001E38CF /* Hexagon.swift */; };
 		00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F211D7296B173C00805154 /* Handling_Keychain.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,14 +33,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0017F186296C19CC0024EFC7 /* Home_View.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = Home_View.swift; sourceTree = "<group>"; tabWidth = 5; wrapsLines = 1; };
-		003CA94129427BB40003C89F /* Succeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Succeed.swift; sourceTree = "<group>"; };
+		0017F186296C19CC0024EFC7 /* HomeView.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; tabWidth = 5; wrapsLines = 1; };
+		002FB98D2A091F3300B91112 /* GameOfSquids.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GameOfSquids.ttf; path = ../../../../Downloads/game_of_squids/GameOfSquids.ttf; sourceTree = "<group>"; };
+		002FB9922A093A6300B91112 /* NotesDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDataStruct.swift; sourceTree = "<group>"; };
+		002FB9972A094AA900B91112 /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
 		003EBB3C292182600043B033 /* ED_ENT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ED_ENT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003EBB3F292182600043B033 /* ED_ENTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ED_ENTApp.swift; sourceTree = "<group>"; };
-		003EBB41292182600043B033 /* Login_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_View.swift; sourceTree = "<group>"; };
+		003EBB41292182600043B033 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		003EBB43292182610043B033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003EBB46292182610043B033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		004868D12922B68F0078C97A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		004794ED29CB7BEC006D0BC5 /* LoginDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataStruct.swift; sourceTree = "<group>"; };
+		004868D12922B68F0078C97A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		00B34CB92A01326C001E38CF /* NotesVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVIew.swift; sourceTree = "<group>"; };
+		00B34CBB2A01378A001E38CF /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		00F211D7296B173C00805154 /* Handling_Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handling_Keychain.swift; sourceTree = "<group>"; };
 		00FBC22F294A5630000E9951 /* ED_ENTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ED_ENTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,17 +68,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0017F185296C19B50024EFC7 /* Home */ = {
+		002FB98C2A091F1500B91112 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				0017F186296C19CC0024EFC7 /* Home_View.swift */,
+				002FB98D2A091F3300B91112 /* GameOfSquids.ttf */,
 			);
-			path = Home;
+			name = Font;
+			path = /Users/robin/Workspace_Developpement/XCode/ED_ENT/Font;
+			sourceTree = "<absolute>";
+		};
+		002FB9942A093ADC00B91112 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00F211D7296B173C00805154 /* Handling_Keychain.swift */,
+				002FB9922A093A6300B91112 /* NotesDataStruct.swift */,
+				004794ED29CB7BEC006D0BC5 /* LoginDataStruct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		002FB9952A094A4C00B91112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				003EBB41292182600043B033 /* LoginView.swift */,
+				0017F186296C19CC0024EFC7 /* HomeView.swift */,
+				00B34CB92A01326C001E38CF /* NotesVIew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		002FB9962A094A7700B91112 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				004868D12922B68F0078C97A /* LoginController.swift */,
+				002FB9972A094AA900B91112 /* NotesController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		003EBB33292182600043B033 = {
 			isa = PBXGroup;
 			children = (
+				002FB98C2A091F1500B91112 /* Font */,
+				00B34CBB2A01378A001E38CF /* Hexagon.swift */,
 				003EBB3E292182600043B033 /* ED_ENT */,
 				003EBB3D292182600043B033 /* Products */,
 			);
@@ -86,8 +128,9 @@
 		003EBB3E292182600043B033 /* ED_ENT */ = {
 			isa = PBXGroup;
 			children = (
-				0017F185296C19B50024EFC7 /* Home */,
-				004BB74C2947942F00D437FD /* Login */,
+				002FB9962A094A7700B91112 /* Controller */,
+				002FB9952A094A4C00B91112 /* View */,
+				002FB9942A093ADC00B91112 /* Model */,
 				003EBB3F292182600043B033 /* ED_ENTApp.swift */,
 				003EBB43292182610043B033 /* Assets.xcassets */,
 				003EBB45292182610043B033 /* Preview Content */,
@@ -101,17 +144,6 @@
 				003EBB46292182610043B033 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		004BB74C2947942F00D437FD /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				003CA94129427BB40003C89F /* Succeed.swift */,
-				004868D12922B68F0078C97A /* Login.swift */,
-				003EBB41292182600043B033 /* Login_View.swift */,
-				00F211D7296B173C00805154 /* Handling_Keychain.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003EBB47292182610043B033 /* Preview Assets.xcassets in Resources */,
+				002FB98E2A091F3300B91112 /* GameOfSquids.ttf in Resources */,
 				003EBB44292182610043B033 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,10 +248,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */,
-				0017F187296C19CC0024EFC7 /* Home_View.swift in Sources */,
-				003CA94229427BB40003C89F /* Succeed.swift in Sources */,
-				003EBB42292182600043B033 /* Login_View.swift in Sources */,
-				004868D22922B68F0078C97A /* Login.swift in Sources */,
+				00B34CBA2A01326C001E38CF /* NotesVIew.swift in Sources */,
+				002FB9932A093A6300B91112 /* NotesDataStruct.swift in Sources */,
+				00B34CBC2A01378A001E38CF /* Hexagon.swift in Sources */,
+				0017F187296C19CC0024EFC7 /* HomeView.swift in Sources */,
+				002FB9982A094AA900B91112 /* NotesController.swift in Sources */,
+				004794EE29CB7BEC006D0BC5 /* LoginDataStruct.swift in Sources */,
+				003EBB42292182600043B033 /* LoginView.swift in Sources */,
+				004868D22922B68F0078C97A /* LoginController.swift in Sources */,
 				003EBB40292182600043B033 /* ED_ENTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +403,7 @@
 				DEVELOPMENT_TEAM = 9DLR2PXWFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ED-ENT-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -395,6 +433,7 @@
 				DEVELOPMENT_TEAM = 9DLR2PXWFY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ED-ENT-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

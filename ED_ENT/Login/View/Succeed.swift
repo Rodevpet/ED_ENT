@@ -9,9 +9,7 @@ import SwiftUI
 
 struct Succeed: View {
     var body: some View {
-        GroupBox(label: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label@*/Text("Label")/*@END_MENU_TOKEN@*/) {
-            Text("tEST")
-        }.foregroundColor(Color.blue).background(Color.blue)
+        
     }
 }
 

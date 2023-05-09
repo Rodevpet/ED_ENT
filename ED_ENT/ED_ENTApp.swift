@@ -13,14 +13,15 @@ import FoundationNetworking
 
 @main
 struct ED_ENTApp: App {
+    public var myGlobal = 0
     @ObservedObject var code:Login = try! Login()
     var body: some Scene {
         WindowGroup {
-            if (code.state != 200){
-                Login_View(request:code)
+            if (code.DATA.code != 200){
+                LoginView(request:code)
             }
-            if (self.code.state == 200){
-                Home_View()
+            if (code.DATA.code == 200){
+                HomeView(DATA: code.DATA)
             }
         }
     }

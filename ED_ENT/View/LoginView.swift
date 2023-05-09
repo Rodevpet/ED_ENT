@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Login_View: View{
+struct LoginView: View{
     var request:Login
     init(request: Login) {
         self.request = request
@@ -16,10 +16,9 @@ struct Login_View: View{
     @State private var password:String = ""
     @State private var offset = CGSize.zero
     var body: some View {
-        ZStack { Image("Background").padding(.bottom).scaleEffect(0.5).frame(width: UIScreen.main.bounds.size.width)
+        ZStack { Image("Background").padding(.bottom).scaleEffect(0.9).frame(width: UIScreen.main.bounds.size.width)
             VStack(alignment: .center){
                 VStack(alignment: .center){
-                    Image("ED_Logo").scaleEffect(0.5)
                     TextField("Identifiant", text: $ID, prompt: Text("Identifiant"))
                         .frame(width: 300.0, height: /*@START_MENU_TOKEN@*/30.0/*@END_MENU_TOKEN@*/)
                         .padding(.leading,10)
@@ -39,7 +38,7 @@ struct Login_View: View{
                                 .shadow(radius: 2)
                         )
                 }
-                .padding([.leading, .bottom, .trailing], 18.0)
+                .padding([.leading, .bottom,.top, .trailing], 18.0)
                 .background(Color.white)
                     .cornerRadius(20)
                     .opacity(0.8)
@@ -74,7 +73,7 @@ struct Login_View: View{
                                         }catch{
                                             print ("error")
                                         }
-                                        if request.state != 273 {
+                                        if request.DATA.code != 273 {
                                             offset = CGSize.zero
                                         }
                                     } else {
@@ -91,7 +90,7 @@ struct Login_View: View{
 struct ContentView_Previews: PreviewProvider {
     static var r:Login = try!Login()
     static var previews: some View {
-        Login_View(request: r)
+        LoginView(request: r)
     }
 }
 
