@@ -16,7 +16,7 @@ struct LoginView: View{
     @State private var password:String = ""
     @State private var offset = CGSize.zero
     var body: some View {
-        ZStack { Image("Background").padding(.bottom).scaleEffect(0.9).frame(width: UIScreen.main.bounds.size.width)
+        ZStack { Image("Background").padding(.bottom).frame(width: UIScreen.main.bounds.size.width)
             VStack(alignment: .center){
                 VStack(alignment: .center){
                     TextField("Identifiant", text: $ID, prompt: Text("Identifiant"))
@@ -83,6 +83,7 @@ struct LoginView: View{
                         )
                 }
             }
+            .ignoresSafeArea()
         }
     }
 }

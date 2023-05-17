@@ -34,4 +34,12 @@ class NotesController {
         }
         task.resume()
     }
+    
+    func sort (data:NotesDataStruct_root){
+        let periode_not_sorted = data.data!.periodes
+        var periode_sorted:[Periode] = []
+        for i in periode_not_sorted {
+            periode_sorted.append(Periode(idPeriode: i.idPeriode, periode: i.periode, dateDebut: i.dateDebut, dateFin: i.dateFin, cloture: i.cloture,Ensemble_Matiere: EnsembleMatiere(nomPP: i.ensembleMatieres.nomPP, appreciationPP: i.ensembleMatieres.appreciationPP)))
+        }
+    }
 }

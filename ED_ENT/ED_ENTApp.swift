@@ -11,7 +11,7 @@ import Foundation
 import FoundationNetworking
 #endif
 
-@main
+@main 
 struct ED_ENTApp: App {
     public var myGlobal = 0
     @ObservedObject var code:Login = try! Login()

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0017F187296C19CC0024EFC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017F186296C19CC0024EFC7 /* HomeView.swift */; };
+		00214E3B2A13C36A00F443E5 /* Professeur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00214E3A2A13C36A00F443E5 /* Professeur.swift */; };
 		002FB98E2A091F3300B91112 /* GameOfSquids.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 002FB98D2A091F3300B91112 /* GameOfSquids.ttf */; };
 		002FB9932A093A6300B91112 /* NotesDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FB9922A093A6300B91112 /* NotesDataStruct.swift */; };
 		002FB9982A094AA900B91112 /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FB9972A094AA900B91112 /* NotesController.swift */; };
@@ -17,8 +18,12 @@
 		003EBB47292182610043B033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003EBB46292182610043B033 /* Preview Assets.xcassets */; };
 		004794EE29CB7BEC006D0BC5 /* LoginDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004794ED29CB7BEC006D0BC5 /* LoginDataStruct.swift */; };
 		004868D22922B68F0078C97A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004868D12922B68F0078C97A /* LoginController.swift */; };
+		007DE68D2A15100E00A9B63A /* Discipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DE68C2A15100E00A9B63A /* Discipline.swift */; };
+		007DE68F2A153DA900A9B63A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DE68E2A153DA900A9B63A /* Note.swift */; };
+		007DE6912A15414F00A9B63A /* EnsembleMatiere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DE6902A15414F00A9B63A /* EnsembleMatiere.swift */; };
 		00B34CBA2A01326C001E38CF /* NotesVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CB92A01326C001E38CF /* NotesVIew.swift */; };
 		00B34CBC2A01378A001E38CF /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CBB2A01378A001E38CF /* Hexagon.swift */; };
+		00B71DE22A1252A60010EB7D /* Periode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B71DE12A1252A60010EB7D /* Periode.swift */; };
 		00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F211D7296B173C00805154 /* Handling_Keychain.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		0017F186296C19CC0024EFC7 /* HomeView.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; tabWidth = 5; wrapsLines = 1; };
+		00214E3A2A13C36A00F443E5 /* Professeur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professeur.swift; sourceTree = "<group>"; };
 		002FB98D2A091F3300B91112 /* GameOfSquids.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GameOfSquids.ttf; path = ../../../../Downloads/game_of_squids/GameOfSquids.ttf; sourceTree = "<group>"; };
 		002FB9922A093A6300B91112 /* NotesDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDataStruct.swift; sourceTree = "<group>"; };
 		002FB9972A094AA900B91112 /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
@@ -44,8 +50,12 @@
 		003EBB46292182610043B033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		004794ED29CB7BEC006D0BC5 /* LoginDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataStruct.swift; sourceTree = "<group>"; };
 		004868D12922B68F0078C97A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		007DE68C2A15100E00A9B63A /* Discipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discipline.swift; sourceTree = "<group>"; };
+		007DE68E2A153DA900A9B63A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		007DE6902A15414F00A9B63A /* EnsembleMatiere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsembleMatiere.swift; sourceTree = "<group>"; };
 		00B34CB92A01326C001E38CF /* NotesVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVIew.swift; sourceTree = "<group>"; };
 		00B34CBB2A01378A001E38CF /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		00B71DE12A1252A60010EB7D /* Periode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Periode.swift; path = ED_ENT/Model/Periode.swift; sourceTree = SOURCE_ROOT; };
 		00F211D7296B173C00805154 /* Handling_Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handling_Keychain.swift; sourceTree = "<group>"; };
 		00FBC22F294A5630000E9951 /* ED_ENTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ED_ENTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,9 +90,14 @@
 		002FB9942A093ADC00B91112 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00B71DE12A1252A60010EB7D /* Periode.swift */,
 				00F211D7296B173C00805154 /* Handling_Keychain.swift */,
 				002FB9922A093A6300B91112 /* NotesDataStruct.swift */,
 				004794ED29CB7BEC006D0BC5 /* LoginDataStruct.swift */,
+				00214E3A2A13C36A00F443E5 /* Professeur.swift */,
+				007DE68C2A15100E00A9B63A /* Discipline.swift */,
+				007DE68E2A153DA900A9B63A /* Note.swift */,
+				007DE6902A15414F00A9B63A /* EnsembleMatiere.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,13 +263,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */,
+				00B71DE22A1252A60010EB7D /* Periode.swift in Sources */,
 				00B34CBA2A01326C001E38CF /* NotesVIew.swift in Sources */,
 				002FB9932A093A6300B91112 /* NotesDataStruct.swift in Sources */,
 				00B34CBC2A01378A001E38CF /* Hexagon.swift in Sources */,
 				0017F187296C19CC0024EFC7 /* HomeView.swift in Sources */,
+				007DE68D2A15100E00A9B63A /* Discipline.swift in Sources */,
+				007DE6912A15414F00A9B63A /* EnsembleMatiere.swift in Sources */,
 				002FB9982A094AA900B91112 /* NotesController.swift in Sources */,
 				004794EE29CB7BEC006D0BC5 /* LoginDataStruct.swift in Sources */,
+				007DE68F2A153DA900A9B63A /* Note.swift in Sources */,
 				003EBB42292182600043B033 /* LoginView.swift in Sources */,
+				00214E3B2A13C36A00F443E5 /* Professeur.swift in Sources */,
 				004868D22922B68F0078C97A /* LoginController.swift in Sources */,
 				003EBB40292182600043B033 /* ED_ENTApp.swift in Sources */,
 			);
