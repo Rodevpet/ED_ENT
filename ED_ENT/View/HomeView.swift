@@ -12,7 +12,7 @@ struct HomeView: View {
      let accounts:LoginDataStruct_accounts?
      init(DATA: LoginDataStruct_root) {
           self.DATA = DATA
-          accounts = try? DATA.data?.accounts[0]
+          accounts = DATA.data?.accounts[0]
      }
      var body: some View {
           NavigationView{
@@ -60,18 +60,17 @@ struct HomeView: View {
                               .frame(width: 350.0, height: 50.0)
                               .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                          HStack (alignment: .top, spacing: 50){
-                              
                               Button(action: {}){
                                    Image("Cloud Button").scaleEffect(0.45)
                                         .frame(width: 90.0, height: 90.0)
                               }.clipShape(Hexagon(width: 90, height: 90))
                                    .frame(width: 90.0, height: 90.0)
                                    .shadow(radius: 5)
-                              NavigationLink(destination: Notes()){
+                              NavigationLink(destination: Notes(XToken: DATA.token, Statut:accounts!.typeCompte, id: String(accounts!.id))){
                                         Image("Grade Button").scaleEffect(0.45)
                                              .frame(width: 90.0, height: 90.0)
                                              .clipShape(Hexagon(width: 90, height: 90))
-                                        .shadow(radius: 5)
+                                             .shadow(radius: 5)
                               }
                               
                               Button(action: {}){
@@ -137,7 +136,7 @@ struct HomeView: View {
      }
 }
 struct Home_View_Previews: PreviewProvider {
-     static var DATA:LoginDataStruct_root = LoginDataStruct_root(code: 0, token: "Empty", message: "Empty", data: LoginDataStruct_data(changementMDP: true, accounts: [LoginDataStruct_accounts(id: 0, identifiant: "Empty", prenom: "Empty", nom: "Empty", email: "Empty", anneeScolaireCourante: "Empty", nomEtablissement: "Empty",profile: (LoginDataStruct_profile(sexe: "ND", classe: LoginDataStruct_classe(code: "ND"), photo: "None")), modules: [LoginDataStruct_modules(code: "Empty", enable: false, ordre: 0, badge: 0)])]))
+     static var DATA:LoginDataStruct_root = LoginDataStruct_root(code: 0, token: "Empty", message: "Empty", data: LoginDataStruct_data(changementMDP: true, accounts: [LoginDataStruct_accounts(id: 0, identifiant: "Empty", typeCompte: "E", prenom: "Empty", nom: "Empty", email: "Empty", anneeScolaireCourante: "Empty", nomEtablissement: "Empty",profile: (LoginDataStruct_profile(sexe: "ND", classe: LoginDataStruct_classe(code: "ND"), photo: "None")), modules: [LoginDataStruct_modules(code: "Empty", enable: false, ordre: 0, badge: 0)])]))
      static var previews: some View {
           HomeView(DATA:DATA)
                .preferredColorScheme(.light)

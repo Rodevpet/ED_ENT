@@ -31,12 +31,14 @@ struct NotesDataStruct_notes: Decodable{
     let date:String
     let dateSaisie:String
     let valeurisee:Bool
-    let moyennecClasse:String
+    let moyenneClasse:String
     let minClasse:String
     let maxClasse:String
 }
+
 struct NotesDataStruct_periodes: Decodable {
     let idPeriode:String
+    let codePeriode:String
     let periode:String
     let dateDebut:String
     let dateFin:String
@@ -45,8 +47,8 @@ struct NotesDataStruct_periodes: Decodable {
 }
 
 struct NotesDataStruct_ensembleMatieres: Decodable{
-    let nomPP:String
-    let appreciationPP:String
+    let nomPP: String
+    let appreciationPP: String
     let disciplines:[NotesDataStruct_disciplines]
 }
 
@@ -54,14 +56,15 @@ struct NotesDataStruct_disciplines: Decodable{
     let id:Int
     let codeMatiere:String
     let discipline:String
-    let moyenne:String
-    let moyennecClasse:String
-    let moyenneMin:String
-    let moyenneMax:String
+    let moyenne:String?
+    let moyenneClasse: String?
+    let moyenneMin:String?
+    let moyenneMax:String?
     let effectif:Int
     let rang:Int
     let professeurs:[NotesDataStruct_professeurs]
-    let appreciations:[String]
+    let appreciations:[String]?
+        
 }
 
 struct NotesDataStruct_professeurs: Decodable{

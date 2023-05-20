@@ -21,7 +21,7 @@
 		007DE68D2A15100E00A9B63A /* Discipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DE68C2A15100E00A9B63A /* Discipline.swift */; };
 		007DE68F2A153DA900A9B63A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DE68E2A153DA900A9B63A /* Note.swift */; };
 		007DE6912A15414F00A9B63A /* EnsembleMatiere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007DE6902A15414F00A9B63A /* EnsembleMatiere.swift */; };
-		00B34CBA2A01326C001E38CF /* NotesVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CB92A01326C001E38CF /* NotesVIew.swift */; };
+		00B34CBA2A01326C001E38CF /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CB92A01326C001E38CF /* NotesView.swift */; };
 		00B34CBC2A01378A001E38CF /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B34CBB2A01378A001E38CF /* Hexagon.swift */; };
 		00B71DE22A1252A60010EB7D /* Periode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B71DE12A1252A60010EB7D /* Periode.swift */; };
 		00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F211D7296B173C00805154 /* Handling_Keychain.swift */; };
@@ -53,7 +53,7 @@
 		007DE68C2A15100E00A9B63A /* Discipline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discipline.swift; sourceTree = "<group>"; };
 		007DE68E2A153DA900A9B63A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		007DE6902A15414F00A9B63A /* EnsembleMatiere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsembleMatiere.swift; sourceTree = "<group>"; };
-		00B34CB92A01326C001E38CF /* NotesVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVIew.swift; sourceTree = "<group>"; };
+		00B34CB92A01326C001E38CF /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		00B34CBB2A01378A001E38CF /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		00B71DE12A1252A60010EB7D /* Periode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Periode.swift; path = ED_ENT/Model/Periode.swift; sourceTree = SOURCE_ROOT; };
 		00F211D7296B173C00805154 /* Handling_Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handling_Keychain.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			children = (
 				003EBB41292182600043B033 /* LoginView.swift */,
 				0017F186296C19CC0024EFC7 /* HomeView.swift */,
-				00B34CB92A01326C001E38CF /* NotesVIew.swift */,
+				00B34CB92A01326C001E38CF /* NotesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			files = (
 				00F211D8296B173C00805154 /* Handling_Keychain.swift in Sources */,
 				00B71DE22A1252A60010EB7D /* Periode.swift in Sources */,
-				00B34CBA2A01326C001E38CF /* NotesVIew.swift in Sources */,
+				00B34CBA2A01326C001E38CF /* NotesView.swift in Sources */,
 				002FB9932A093A6300B91112 /* NotesDataStruct.swift in Sources */,
 				00B34CBC2A01378A001E38CF /* Hexagon.swift in Sources */,
 				0017F187296C19CC0024EFC7 /* HomeView.swift in Sources */,

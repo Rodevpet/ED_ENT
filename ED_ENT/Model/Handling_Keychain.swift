@@ -45,7 +45,7 @@ class Handling_Keychain{
         let query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
                                     kSecAttrAccount as String: account,
                                     kSecAttrServer as String: server,
-                                    kSecValueData as String: password.data(using: String.Encoding.utf8)]
+                                    kSecValueData as String: password.data(using: String.Encoding.utf8) ?? ""]
         let status = SecItemAdd(query as CFDictionary, nil)
         guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status) }
         return status

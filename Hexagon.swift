@@ -16,6 +16,7 @@ struct Hexagon: Shape {
         self.width=width
         self.height=height
     }
+    
     func path(in rect: CGRect) -> Path {
         var path = Path()
         let center = CGPoint(x: rect.midX, y: rect.midY)
@@ -26,7 +27,7 @@ struct Hexagon: Shape {
             path.addLine(to: point)
         }
         path.closeSubpath()
-        path.frame(width: self.width, height: self.height)
+        _ = path.frame(width: self.width, height: self.height)
         return path
     }
     

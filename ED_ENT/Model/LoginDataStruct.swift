@@ -23,6 +23,7 @@ struct LoginDataStruct_data: Decodable {
 struct LoginDataStruct_accounts: Decodable{
     let id: Int
     let identifiant: String
+    let typeCompte: String
     let prenom: String
     let nom: String
     let email: String
