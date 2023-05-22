@@ -106,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				003EBB41292182600043B033 /* LoginView.swift */,
+				00B34CBB2A01378A001E38CF /* Hexagon.swift */,
 				0017F186296C19CC0024EFC7 /* HomeView.swift */,
 				00B34CB92A01326C001E38CF /* NotesView.swift */,
 			);
@@ -125,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				002FB98C2A091F1500B91112 /* Font */,
-				00B34CBB2A01378A001E38CF /* Hexagon.swift */,
 				003EBB3E292182600043B033 /* ED_ENT */,
 				003EBB3D292182600043B033 /* Products */,
 			);

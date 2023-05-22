@@ -8,6 +8,7 @@
 import Foundation
 class NotesController {
     var DATA:NotesDataStruct_root?
+    var Periode:[Periode] = []
     init (XToken:String,Statut:String,id:String){
         let body = "data=%7B%22anneeScolaire%22%3A%20%22%22%20%7D"
         let postData =  body.data(using: .utf8)
@@ -33,14 +34,14 @@ class NotesController {
                 }
                 DispatchQueue.main.async {
                     self.DATA=notes
-                    self.sort(data: self.DATA!)
+                    self.Periode = self.sort(data: self.DATA!)
                 }
             }
         }
         task.resume()
     }
     
-    func sort (data:NotesDataStruct_root){
+    func sort (data:NotesDataStruct_root) -> [Periode]{
         let periode_not_sorted = data.data!.periodes
         var periode_sorted:[Periode] = []
         for i in periode_not_sorted {
@@ -104,6 +105,6 @@ class NotesController {
             periode_sorted.append(period_Builder.Build())
             
         }
-        print (periode_sorted[0].Discipline[0].notes[0].valeur)
+        return periode_sorted
     }
 }
