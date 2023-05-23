@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct Notes: View {
-    let XToken:String
-    let Statut:String
-    let id:String
+    let subjects:[Periode]
     //let controller:NotesController
     @State private var magnifyBy = 1.0
     @State private var width =  UIScreen.main.bounds.size.width+400
@@ -35,16 +33,14 @@ struct Notes: View {
                 }
                 })
     }
-    init (XToken:String,Statut:String,id:String){
-        self.XToken = XToken
-        self.Statut = Statut
-        self.id = id
+    init (subject:[Periode]){
+        self.subjects = subject
         //self.controller=NotesController(XToken: XToken, Statut: Statut, id: id)
         for i in 0...9 {
             let random = Int.random(in: 10..<100)
             let x = cos(2*CGFloat.pi/10*CGFloat(i))*(250+CGFloat(random))
             let y = sin(2*CGFloat.pi/10*CGFloat(i))*(250+CGFloat(random))
-            matters.append(matter(id:random.description, x: x, y: y))
+            //matters.append(matter(id:random.description, x: x, y: y,text:"esg"))
         }
     }
     var body: some View {
@@ -53,7 +49,7 @@ struct Notes: View {
                 ScrollView ([.horizontal,.vertical],showsIndicators: false){
                 ZStack{
                     ForEach(matters) {matter in
-                        line(begin: CGPoint(x: center_x, y: center_y), end: CGPoint(x: center_x+matter.x, y: center_y+matter.y)).stroke(.white, lineWidth: 2)
+                        line(begin: CGPoint(x: center_x, y: center_y), end: CGPoint(x: center_x+matter.x, y: center_y+matter.y)).stroke(LinearGradient(gradient: Gradient(colors: [Color("Gradient3"),Color("Gradient2")]),startPoint: .top, endPoint: .center), lineWidth: 2)
                         Circle()
                             .fill(LinearGradient(gradient: Gradient(colors: [Color("Gradient4"),Color("Gradient2")]), startPoint: .top, endPoint: .center))
                             .frame(width: 100, height: 100)
@@ -63,6 +59,10 @@ struct Notes: View {
                                 print("esg")
                             }
                         }
+                    ForEach(0...90, id: \.self) { i in
+                        line(begin: CGPoint(x: center_x+cos(2*CGFloat.pi/90*CGFloat(i))*110, y: center_y+sin(2*CGFloat.pi/90*CGFloat(i))*110), end: CGPoint(x: center_x+cos(2*CGFloat.pi/90*CGFloat(i))*160, y: center_y+sin(2*CGFloat.pi/1*CGFloat(i))*160))
+                            .stroke(LinearGradient(gradient: Gradient(colors: [Color("Gradient2"),.blue]), startPoint: .top, endPoint: .bottom),lineWidth:1)
+                    }
                     Circle().fill(
                             LinearGradient(gradient: Gradient(colors: [Color("Gradient1"),Color("Gradient2")]), startPoint: .top, endPoint: .bottom)
                         )
@@ -77,12 +77,7 @@ struct Notes: View {
             }
         }.ignoresSafeArea()
             .gesture(magnification)
-            .onRotate{_ in
-                let old_width = width
-                let old_height = height
-                    width=old_height
-                    height=old_width
-            }
+
     }
 }
 struct DeviceRotationViewModifier: ViewModifier {
@@ -115,8 +110,10 @@ extension View {
 }
 
 struct Notes_Previews: PreviewProvider {
+    static var data_exemple:[Periode] = []
+    
     static var previews: some View {
-        Notes(XToken: "e", Statut: "e", id: "e")
+        Notes(subject: data_exemple)
     }
 }
 
@@ -124,6 +121,8 @@ struct matter:Identifiable{
     var id: String
     let x:CGFloat
     let y:CGFloat
+    let text:String
+    let matter:Discipline
 }
 
 struct line:Shape{

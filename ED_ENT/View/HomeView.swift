@@ -66,7 +66,9 @@ struct HomeView: View {
                               }.clipShape(Hexagon(width: 90, height: 90))
                                    .frame(width: 90.0, height: 90.0)
                                    .shadow(radius: 5)
-                              NavigationLink(destination: Notes(XToken: DATA.token, Statut:accounts!.typeCompte, id: String(accounts!.id))){
+                              NavigationLink(destination:
+                                                  Notes(subject: NotesController(XToken: DATA.token, Statut:accounts!.typeCompte, id: String(accounts!.id)).Periode)
+                                   ){
                                         Image("Grade Button").scaleEffect(0.45)
                                              .frame(width: 90.0, height: 90.0)
                                              .clipShape(Hexagon(width: 90, height: 90))
